@@ -1,0 +1,20 @@
+# dependencies
+/node_modules
+
+# flow-typed
+flow-typed/npm/*
+
+# production
+/dist
+/output
+
+# misc
+.DS_Store
+.vscode
+npm-debug.log*
+
+# other
+.happypack
+server/upload/*
+!server/upload/.gitkeep
+src/version.txt
