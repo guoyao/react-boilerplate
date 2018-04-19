@@ -17,7 +17,7 @@ const jsHappPack = new HappyPack({
 });
 
 export default {
-    mode: 'production',
+    mode: 'development',
     entry: './app/app.js',
     output: {
         filename: 'bundle.js',
