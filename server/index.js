@@ -2,7 +2,9 @@ import program from 'commander';
 import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
 
-import webpackConfig from '../webpack.config';
+import webpackConfigFactory from '../webpack.config';
+
+const webpackConfig = webpackConfigFactory({}, {mode: 'development'});
 
 program
     .option('-p, --port <n>', 'Set port for server', parseInt)

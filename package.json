@@ -21,9 +21,9 @@
     "node": ">=6"
   },
   "scripts": {
-    "build": "npm run clean && npm run webpack --progress --color",
-    "webpack": "babel-node ./node_modules/webpack/bin/webpack",
-    "start": "babel-node -- server",
+    "build": "npm run clean && npm run bundle",
+    "bundle": "babel-node ./node_modules/webpack/bin/webpack --progress --color",
+    "start": "babel-node server",
     "clean": "rm -rf dist",
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore",
