@@ -11,7 +11,7 @@ export default props => (
     <div>
         <h1>APP</h1>
         <Link to="/home">Home</Link>
-        <Link to="/page1">Page 1</Link>
+        <Link to="/404">404 Page</Link>
         <div>
             <Switch>
                 <Redirect path="/" exact to="/home" />
