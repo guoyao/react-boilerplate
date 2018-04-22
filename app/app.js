@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Router, Route} from 'react-router';
 import {createBrowserHistory} from 'history';
 
-import App from './containers/App';
+import Shell from './containers/Shell';
 import {route as HomePageRoute} from './containers/HomePage';
 import {route as NotFoundPageRoute} from './containers/NotFoundPage';
 
@@ -15,7 +15,7 @@ const routes = [].concat(
 
 ReactDOM.render(
     <Router history={history}>
-        <Route render={props => <App {...props} routes={routes} />} />
+        <Route render={props => <Shell {...props} routes={routes} />} />
     </Router>,
     document.getElementById('app')
 );
