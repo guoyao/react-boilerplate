@@ -57,7 +57,8 @@ export default (env, argv) => {
             rules: [
                 {
                     test: /\.js$/,
-                    use: 'happypack/loader?id=js'
+                    use: 'happypack/loader?id=js',
+                    include: path.resolve(__dirname, 'app')
                 },
                 {
                     test: /\.less$/,
