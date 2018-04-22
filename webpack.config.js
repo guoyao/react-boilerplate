@@ -34,6 +34,13 @@ export default (env, argv) => {
             path: path.resolve(__dirname, 'dist'),
             publicPath: ''
         },
+        resolve: {
+            modules: [
+                path.resolve(__dirname, 'app'),
+                'node_modules'
+            ],
+            extensions: ['.js']
+        },
         plugins: [
             jsHappyPack,
             lessHappyPack,

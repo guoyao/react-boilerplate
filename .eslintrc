@@ -18,6 +18,20 @@
         "jsx-a11y",
         "import"
     ],
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": {
+                    "resolve": {
+                        "modules": [
+                            "app",
+                            "node_modules"
+                        ]
+                    }
+                }
+            }
+        }
+    },
     "rules": {
         "indent": [2, 4],
         "max-len": ["error", 120],
