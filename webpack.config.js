@@ -58,10 +58,6 @@ export default (env, argv) => {
                         use: 'happypack/loader?id=less',
                         fallback: 'style-loader'
                     })
-                },
-                {
-                    test: /favicon\.ico$/,
-                    use: {loader: 'file-loader?name=[name].[ext]'}
                 }
             ]
         }
